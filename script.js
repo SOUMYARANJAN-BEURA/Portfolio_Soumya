@@ -57,3 +57,25 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
 });
 
 //////////////////////////////////////////////////// F_S_JS
+
+
+
+
+
+
+//////////////////////////////////////////////// Respinsive-Nav-JavaScript
+
+// Toggle Navbar for Mobile
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.createElement("div");
+    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+    menuToggle.classList.add("menu-toggle");
+    document.querySelector(".navbar").appendChild(menuToggle);
+
+    const navbarMenu = document.querySelector(".navbar ul");
+    menuToggle.addEventListener("click", function () {
+        navbarMenu.classList.toggle("show");
+    });
+});
+
+//////////////////////////////////////////////// R_N_JS

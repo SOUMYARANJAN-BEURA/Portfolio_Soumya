@@ -65,6 +65,7 @@ a{
 }
 
 
+/*-------------------------------------------------------------home-page---------------------------------------*/
 
 .home{
     display: flex;
@@ -259,6 +260,7 @@ home-img .img-box .img-item img{
 
 
 /* -------------------------------------------about-page------------------------------------------------------------------ */
+
 .about {
     display: flex;
     align-items: center;
@@ -391,7 +393,6 @@ home-img .img-box .img-item img{
 }
 
 
-
 /*-----------------------------------------------------------skills-page--------------------------------------------*/
 
 /*-- this skill section only wite for commit and puse purpose of skill section because i forgot to push it before Contact section */
@@ -473,8 +474,6 @@ home-img .img-box .img-item img{
 
 
 /*--------------------------------------------------contact-page------------------------------------------ */
-
-
 
 .contact {
     padding: 80px 10%;
@@ -570,7 +569,6 @@ home-img .img-box .img-item img{
 }
 
 
-
 /* Change placeholder text color */
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
@@ -629,3 +627,184 @@ home-img .img-box .img-item img{
     border-radius: 7rem;
 }
 
+
+
+
+/*---------------------------------------------Responsive-Ness CSS Style-----------------------------------------*/
+
+                            /* Responsive Design for Tablets and Mobile Devices */
+
+@media (max-width: 1024px) {
+    /* Adjust navbar for tablets */
+    .navbar {
+        padding: 20px 5%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        display: none;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .navbar ul li {
+        text-align: center;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        font-size: 18px;
+    }
+
+    /* Adjust home section */
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .home-info {
+        order: 2;
+    }
+
+    .home-img {
+        order: 1;
+        width: 70%;
+    }
+
+    /* About Section */
+    .about {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 40px;
+    }
+
+    .about-img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    /* Portfolio Section */
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-item {
+        width: 90%;
+    }
+
+    /* Skills Section */
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-box {
+        width: 90%;
+    }
+
+    /* Contact Section */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form {
+        width: 90%;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    /* Adjust font sizes */
+    .home-info h1 {
+        font-size: 40px;
+    }
+
+    .home-info h2 {
+        font-size: 24px;
+    }
+
+    .home-info p {
+        font-size: 14px;
+    }
+
+    /* Make navbar more mobile-friendly */
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar .logo {
+        font-size: 24px;
+    }
+
+    .navbar ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Adjust section heights */
+    .home,
+    .about,
+    .portfolio,
+    .skills,
+    .contact {
+        height: auto;
+        padding: 50px 5%;
+    }
+
+    /* Footer adjustments */
+    .last-text p {
+        font-size: 14px;
+    }
+}
+
+           
+                      /*-------------Navbar Toggle Button-----------------*/
+
+.menu-toggle {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .menu-toggle {
+        display: block;
+    }
+}
+
+                                       
+                                        
