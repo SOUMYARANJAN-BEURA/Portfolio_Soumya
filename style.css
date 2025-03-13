@@ -19,7 +19,7 @@ a{
     width: 100%;
     height: 75px;
     padding: 25px 9%;
-    background: rgb(6, 205, 209);  
+    background: rgb(243, 8, 121);  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -193,7 +193,7 @@ a{
     position: absolute;
     width: 1000px;
     height: 500px;
-    background: conic-gradient(transparent, transparent, transparent, #f016da);
+    background: conic-gradient(transparent, transparent, transparent, #15e3ac);
     transform: rotate(0deg);
     animation: rotate-border 10s linear infinite;
 }
@@ -307,4 +307,83 @@ home-img .img-box .img-item img{
 
 .btn:hover {
     background-color: #555;
+}
+
+
+/*-----------------------------------------------------------portfolio-page--------------------------------------------*/
+
+.portfolio {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #1f242d;
+    height: 800px;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #1692f2;
+    text-decoration: underline #1692f2;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.portfolio-item {
+    width: 30%;
+    background: rgb(5, 241, 241);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgb(13, 1, 183);
+    transition: 0.3s;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-info {
+    margin-top: 15px;
+}
+
+.portfolio-info h3 {
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.portfolio-info p {
+    font-size: 0.9rem;
+    color:rgb(238, 8, 162);
+}
+
+.portfolio-info a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background: #f00303;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.portfolio-info a:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-item {
+        width: 80%;
+    }
 }
