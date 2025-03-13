@@ -8,7 +8,7 @@
 
 
 a{
-    color: #fff;
+    color: whitesmoke;
     text-decoration: none;
 }
 
@@ -19,7 +19,7 @@ a{
     width: 100%;
     height: 77px;
     padding: 25px 9%;
-    background: rgb(243, 8, 121);  
+    background: #07f0c9;  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,7 +61,7 @@ a{
 
 .navbar ul li:hover a,
 .navbar ul li.active a{
-    color: cyan;
+    color: #2413be;
 }
 
 
