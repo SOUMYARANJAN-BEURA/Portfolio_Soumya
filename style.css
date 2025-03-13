@@ -17,7 +17,7 @@ a{
     left: 0;
     top: 0;
     width: 100%;
-    height: 75px;
+    height: 77px;
     padding: 25px 9%;
     background: rgb(243, 8, 121);  
     display: flex;
@@ -61,8 +61,10 @@ a{
 
 .navbar ul li:hover a,
 .navbar ul li.active a{
-    color: #7cf03d;
+    color: cyan;
 }
+
+
 
 .home{
     display: flex;
@@ -290,7 +292,7 @@ home-img .img-box .img-item img{
 
 .about-content p {
     font-size: 18px;
-    color: #0eeeb6;
+    color: aqua;
     line-height: 1.6;
 }
 
@@ -313,7 +315,7 @@ home-img .img-box .img-item img{
 /*-----------------------------------------------------------portfolio-page--------------------------------------------*/
 
 .portfolio {
-    padding: 80px 10%;
+    padding: 80px 15%;
     text-align: center;
     background-color: #1f242d;
     height: 800px;
@@ -387,3 +389,246 @@ home-img .img-box .img-item img{
         width: 80%;
     }
 }
+
+
+
+/*-----------------------------------------------------------skills-page--------------------------------------------*/
+
+
+/* Skills Section */
+.skills {
+    padding: 80px 10%;
+    text-align: center;
+    background: #1f242d;
+    height: 800px;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #1692f2;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-box {
+    width: 45%;
+    background: aqua;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 15px 17px 10px rgb(2, 204, 245);
+
+}
+
+.skills-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #222;
+    text-shadow: 9px 9px #0056b3;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ef0758;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #fbfafa;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background: #0549f5;
+    border-radius: 5px;
+    width: 0;
+    transition: width 1.5s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-box {
+        width: 80%;
+    }
+}
+
+
+/*--------------------------------------------------contact-page------------------------------------------ */
+
+
+
+.contact {
+    padding: 80px 10%;
+    background: #1f242d;
+    text-align: center;
+    height: 800px;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    color: #1692f2;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-info {
+    width: 45%;
+    text-align: left;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: cyan;
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: #007bff;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid white;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #15deed;
+    color: black;
+}
+
+.contact-form button {
+    padding: 10px;
+    background: greenyellow;
+    color: rgb(253, 18, 18);
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: blue;
+    color: rgb(5, 241, 241);
+}
+
+#form-message {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: green;
+}
+
+
+
+/* Change placeholder text color */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #007bff;  /* Change this to your desired color */
+    opacity: 1; /* Ensures full visibility */
+}
+
+
+/* For better browser compatibility */
+.contact-form input:-ms-input-placeholder,  /* IE 10+ */
+.contact-form textarea:-ms-input-placeholder {
+    color: #007bff;
+}
+
+.contact-form input::-ms-input-placeholder,  /* Edge */
+.contact-form textarea::-ms-input-placeholder {
+    color: #007bff;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info, .contact-form {
+        width: 80%;
+    }
+}
+
+
+/*---------------------------------------------------last-page 
+
+.last-text p{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: rgb(7,85,91);
+    font-weight: 300;
+    margin-top: 0px;
+}
+
+.top{
+    position: fixed;
+    bottom: 1rem;
+    right: 2.1rem;
+}
+
+.top i{
+    color: #000;
+    background: #0ef;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 7rem;
+}
+
+
+
+------------------------------------------------------------------*/
