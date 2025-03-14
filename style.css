@@ -71,7 +71,7 @@ a{
     display: flex;
     align-items: center;
     gap: 50px;
-    height: 100vh;
+    height: 700px;
     padding: 60px 9% 0;
     color: #fff;
     visibility: hidden; 
@@ -268,7 +268,6 @@ home-img .img-box .img-item img{
     padding: 50px;
     background-color: #1f242d;
     height: 800px;
-    
 }
 
 .about-img img {
@@ -781,7 +780,7 @@ home-img .img-box .img-item img{
     .skills,
     .contact {
         height: auto;
-        padding: 50px 5%;
+        padding: 150px 5%;          /* it showing home img in responsive time */
     }
 
     /* Footer adjustments */
