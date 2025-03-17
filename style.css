@@ -179,11 +179,11 @@ a{
 
 .home-img .img-box{
     position: relative;
-/*     width: 35vw;
-    height: 35vw; */
+    width: 35vw;
+    height: 35vw; 
 
-    width: 60vw;
-    height: 60vw;
+/*     width: 60vw;
+    height: 60vw; */
     
     /* background: red; */
     border-radius: 50%;
